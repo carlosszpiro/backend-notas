@@ -13,7 +13,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = strtobool(os.getenv("DEBUG"))
 
-ALLOWED_HOSTS = ["localhost:8000", "127.0.0.1:8000", "https://backend-notas.up.railway.app/"]
+ALLOWED_HOSTS = ["localhost:8000", "127.0.0.1:8000", "backend-notas.up.railway.app"]
 
 CSRF_TRUSTED_ORIGINS = ["https://backend-notas.up.railway.app/"]
 
