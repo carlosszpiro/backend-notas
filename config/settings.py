@@ -13,7 +13,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = strtobool(os.getenv("DEBUG"))
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["localhost:8000", "127.0.0.1:8000", "https://backend-notas.up.railway.app/"]
+
+CSRF_TRUSTED_ORIGINS = ["https://backend-notas.up.railway.app/"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -88,6 +90,7 @@ CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://backend-notas.up.railway.app/"
 ]
 
 MIDDLEWARE = [
