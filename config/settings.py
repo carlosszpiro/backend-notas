@@ -15,7 +15,7 @@ DEBUG = strtobool(os.getenv("DEBUG"))
 
 ALLOWED_HOSTS = ["localhost:8000", "127.0.0.1:8000", "backend-notas.up.railway.app"]
 
-CSRF_TRUSTED_ORIGINS = ["https://backend-notas.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://backend-notas.up.railway.app"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
